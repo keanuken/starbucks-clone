@@ -1,0 +1,292 @@
+:root {
+  --fonts: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-weight: 300;
+  font-family: var(--fonts);
+}
+
+/* Navbar */
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  height: 60px;
+  padding: 1em;
+  max-width: 100%;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 4em;
+  padding-top: 2.5em;
+  position: relative;
+}
+
+nav a {
+  color: #303030;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #007042;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 0%;
+  background-color: #007042;
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/* End Navbar */
+
+/* Hero */
+.nameComp {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 66% auto;
+}
+
+.greets {
+  width: auto;
+  height: auto;
+  background-color: #3e716f;
+  float: left;
+  color: white;
+}
+
+.greets h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.greets p {
+  margin-left: 11.5em;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  line-height: 150%;
+}
+
+.sbux {
+  width: 100%;
+}
+
+.try {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  padding: 7px 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 14.5em;
+}
+
+.borderBtn {
+  border-color: white;
+  color: white;
+}
+
+.borderBtn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* End hero */
+
+/* Card */
+#card-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+  max-width: calc(100% - 80px);
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.article-card {
+  background: rgb(236, 255, 246);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 15px 0 #ededed;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content .card-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  display: block;
+  color: #1e3932;
+  text-decoration: none;
+}
+
+.card-content .card-desc {
+  margin: 1rem 0;
+  color: #303030;
+}
+
+.products {
+  font-size: 32px;
+  font-weight: 800px;
+  padding-left: 1rem;
+  color: #1e3932;
+}
+
+/* End Card */
+
+/* Footer */
+footer {
+  background: white;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #1e3932;
+}
+
+#footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+#footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.sosmed {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sosmed li {
+  margin: 0 20px;
+  margin-right: 3em;
+}
+
+.sosmed a {
+  text-decoration: none;
+  color: #1e3932;
+}
+
+.sosmed a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.sosmed a:hover i {
+  color: #3e716f;
+}
+
+.footer-bottom {
+  background: #fff;
+  width: 100vw;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  color: #1e3932;
+  font-weight: 800;
+}
+
+/* End Footer */
