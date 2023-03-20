@@ -1,237 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://freepngimg.com/download/starbucks/24210-2-starbucks-logo-image.png"
-      type="image/x-icon"
-    />
-    <title>Starbucks Clone</title>
-  </head>
-  <body>
-    <!-- Start Navbar -->
-    <header>
-      <div class="navbar">
-        <img src="/assets/logo.png" alt="logo.png" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#card-container">Product List</a></li>
-            <li><a href="#footer-content">About Me</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- End Navbar -->
 
-    <!-- Greet -->
-    <div class="nameComp">
-      <div class="greets">
-        <h1>Starbucks Clone</h1>
-        <p>
-          Hi 👋🏻, Ini adalah pembuatan Landing Page <br />Starbucks Clone
-          menggunakan pure HTML + CSS
-          <br />
-          tanpa menggunakan framework apapun untuk memenuhi
-          <br />
-          Tugas Akhir 2 ISB - 310 Praktikum
-          <br />
-          made by ❤️ 162020003 Keanu JP
-        </p>
-        <button
-          onclick="location.href='https://www.starbucks.com/'"
-          class="try borderBtn"
-        >
-          Try it now
-        </button>
-      </div>
-      <img
-        src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-82556.jpg"
-        alt="sbux.jpg"
-        class="sbux"
-      />
-    </div>
-    <!-- End Greet -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="https://freepngimg.com/download/starbucks/24210-2-starbucks-logo-image.png"
+    type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Starbucks Clone</title>
+</head>
 
-    <!-- Product Cards -->
-    <div id="card-container">
-      <h2 class="products">Products</h2>
-      <div class="article-container">
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/a41e9afa349af0c2c601b0f5569b93a8_0.jpg"
-              alt="espresso.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Espresso Drinks</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/5b4a049fe41eb1994399b879b7f81256_0.jpg"
-              alt="brewed.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Brewed Coffee</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/478a358cfea7341d124149a3df1a30dd_3.jpg"
-              alt="americano.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Iced Coffee & Cold Brew</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/2c37fb5960249296946d146045c5827f_3.jpg"
-              alt="hottea.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Hot Tea</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/189ef63914a276f853b5302fffa73646_2.jpg"
-              alt="matcha.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Iced Tea</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Pink-Coconut-Starbucks-Refresha_0.jpeg"
-              alt="strawberry.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Starbucks Refresha Drinks</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/51d3b5ae48df80fe2e7e5ae1c8a90309_3.jpg"
-              alt="frappucino.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Frappuccino Blended Beverages</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Classic-Hot-Chocolate_2.jpeg"
-              alt="hotchocolate.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Hot Chocolate & Other Drinks</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/1fecc2dcf89376366bb45e91c22106d2_0.jpg"
-              alt="burger.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Breakfast</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-
-        <article class="article-card">
-          <figure class="card-image">
-            <img
-              src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Cinnamon-Cream-Cheese-Muffin_0.jpeg"
-              alt="cake.jpg"
-            />
-          </figure>
-          <div class="card-content">
-            <a href="#" class="card-title">Bakery Treats</a>
-            <h3 class="card-desc">Lorem, ipsum dolor.</h3>
-          </div>
-        </article>
-      </div>
-    </div>
-    <!-- End product cards -->
-
-    <!-- Footer -->
-    <footer>
-      <div id="footer-content">
-        <h3>Starbucks Clone</h3>
-        <p>
-          NRP 162020003 Keanu Jaler Pangestu Sistem Informasi Fakultas Teknologi
-          Industri ITENAS 2020.
-        </p>
-        <ul class="sosmed">
-          <li>
-            <a href="https://github.com/keanuken/"
-              ><i class="fa fa-github-alt"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/keanuken_/"
-              ><i class="fa fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:keanujalerr.kj@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </li>
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <div class="navbar">
+      <img src="/assets/logo.png" alt="logo.png" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#card-container">Product List</a></li>
+          <li><a href="#footer-content">About Me</a></li>
+          <li><a href="/user/login.php">Login</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Navbar -->
+
+  <!-- Greet -->
+  <div class="nameComp">
+    <div class="greets pt-5">
+      <h1>Starbucks Clone</h1>
+      <p>
+        Hi 👋🏻, Ini adalah pembuatan Landing Page <br />Starbucks Clone
+        menggunakan pure HTML + CSS
+        <br />
+        tanpa menggunakan framework apapun untuk memenuhi
+        <br />
+        Tugas Akhir 2 ISB - 310 Praktikum
+        <br />
+        made by ❤️ 162020003 Keanu JP
+      </p>
+      <button onclick="location.href='https://www.starbucks.com/'" class="try borderBtn">
+        Try it now
+      </button>
+    </div>
+    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-82556.jpg" alt="sbux.jpg" class="sbux" />
+  </div>
+  <!-- End Greet -->
+
+  <!-- Carousel -->
+  <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-inner">
+      <div class="carousel-item item active c-item">
+        <img class="d-block w-100 c-img"
+          src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-82556.jpg" alt="First slide">
+        <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+          <h1 class="display-1 fw-bolder text-capitalize">Frappuccino</h1>
+          <p class="mt-5 fs-3 text-uppercase">Buy 1 Get 1 Frappuccino with Ice Cream.</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="location.href='https://www.starbucks.com/'"
+            type="button">Buy</button>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>copyright &copy;2023 Keanu JP. Dev by <span>Keanu JP</span></p>
+      <div class="carousel-item c-item">
+        <img class="d-block w-100 c-img"
+          src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/a41e9afa349af0c2c601b0f5569b93a8_0.jpg"
+          alt="Second slide">
+        <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+          <h1 class="display-1 fw-bolder text-capitalize">Espresso</h1>
+          <p class="mt-5 fs-3 text-uppercase">Buy 1 Get Double Espresso.</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="location.href='https://www.starbucks.com/'"
+            type="button">Buy</button>
+        </div>
       </div>
-    </footer>
-    <!-- End Footer -->
-  </body>
+      <div class="carousel-item c-item">
+        <img class="d-block w-100 c-img"
+          src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/1fecc2dcf89376366bb45e91c22106d2_0.jpg"
+          alt="Third slide">
+        <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+          <h1 class="display-1 fw-bolder text-capitalize">Food</h1>
+          <p class="mt-5 fs-3 text-uppercase">Get 25% Discount on Friday Food.</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="location.href='https://www.starbucks.com/'"
+            type="button">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+  <!-- End Carousel -->
+
+  <!-- Product Cards -->
+  <div id="card-container">
+    <h2 class="products pb-5">Products</h2>
+    <div class="article-container">
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/a41e9afa349af0c2c601b0f5569b93a8_0.jpg"
+            alt="espresso.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Espresso Drinks</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/5b4a049fe41eb1994399b879b7f81256_0.jpg"
+            alt="brewed.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Brewed Coffee</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/478a358cfea7341d124149a3df1a30dd_3.jpg"
+            alt="americano.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Iced Coffee & Cold Brew</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/2c37fb5960249296946d146045c5827f_3.jpg"
+            alt="hottea.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Hot Tea</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/189ef63914a276f853b5302fffa73646_2.jpg"
+            alt="matcha.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Iced Tea</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Pink-Coconut-Starbucks-Refresha_0.jpeg"
+            alt="strawberry.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Starbucks Refresha Drinks</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/51d3b5ae48df80fe2e7e5ae1c8a90309_3.jpg"
+            alt="frappucino.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Frappuccino Blended Beverages</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Classic-Hot-Chocolate_2.jpeg"
+            alt="hotchocolate.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Hot Chocolate & Other Drinks</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/assets/1fecc2dcf89376366bb45e91c22106d2_0.jpg"
+            alt="burger.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Breakfast</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <figure class="card-image">
+          <img
+            src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Cinnamon-Cream-Cheese-Muffin_0.jpeg"
+            alt="cake.jpg" />
+        </figure>
+        <div class="card-content">
+          <a href="#" class="card-title">Bakery Treats</a>
+          <h5 class="card-desc">Lorem, ipsum dolor.</h5>
+        </div>
+      </article>
+    </div>
+  </div>
+  <!-- End product cards -->
+
+  <!-- FAQ -->
+  <div class="faq-container">
+    <div class="accordion" id="accordionExample">
+      <h2 class="faq-title pb-4">FAQ</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Siapa saya ?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Saya Keanu Jaler Pangestu</strong> NRP 162020003 Program Studi Sistem Informasi ITENAS.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Apa ini ?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Starbucks Clone.</strong> Diperuntukan untuk memenuhi tugas ISB - 310 Sistem Informasi Web.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Lorem.
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Lorem, ipsum.</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore officiis
+            quas, nesciunt eum eaque ea.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End FAQ -->
+
+  <!-- Footer -->
+  <footer>
+    <div id="footer-content">
+      <h3>Starbucks Clone</h3>
+      <p>
+        NRP 162020003 Keanu Jaler Pangestu Sistem Informasi Fakultas Teknologi
+        Industri ITENAS 2020.
+      </p>
+      <ul class="sosmed">
+        <li>
+          <a href="https://github.com/keanuken/"><i class="fa fa-github-alt"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/keanuken_/"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="mailto:keanujalerr.kj@gmail.com"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 Keanu JP. Dev by <span>Keanu JP</span></p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JS BS -->
+  <script src="js/bootstrap.js"></script>
+</body>
+
 </html>
